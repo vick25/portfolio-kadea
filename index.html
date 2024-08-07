@@ -9,59 +9,61 @@
 </head>
 
 <body>
-    <header>
-        <h2>Victor Kadiata</h2>
-        <nav>
-            <menu>
-                <li><a href="/cv.html">CV</a></li>
-                <li><a href="/projet.html">Projets</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </menu>
-        </nav>
-    </header>
-
-    <main>
-        <div><img src="/images/victor.JPG" alt="Victor photo"></div>
-        <div>
-            <h1>Victor Kadiata</h1>
-            <h3>Je suis Victor</h3>
-            <p>
-                Je suis <span>Victor Kadiata</span> un passionné de IT et développeur Web doté d'une analyse
-                approfondie des choses et d'un talent pour exécuter et concrétiser des idées en expérience
-                numériques interactives.
-            </p>
-            <div>
-                <span><a href="/cv.html">CV</a></span>
-                <span><a href="/projet.html">Projets</a></span>
-                <span><a href="/contact.html">Contact</a></span>
+    <div class="container">
+        <header class="header">
+            <nav class="header__nav">
+                <h2 class="nav__title">
+                    <a href="/">Victor Kadiata</a>
+                </h2>
+                <menu class="nav__menu">
+                    <li class="nav__menu-items"><a href="/cv.html" class="nav__menu-links">CV</a></li>
+                    <li class="nav__menu-items"><a href="/projet.html" class="nav__menu-links">Projets</a></li>
+                    <li class="nav__menu-items"><a href="/contact.html" class="nav__menu-links">Contact</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main class="hero">
+            <div class="hero__image"><img src="/images/victor.JPG" alt="Victor photo"></div>
+            <div class="hero__presentation">
+                <h1 class="h1">Salut !</h1>
+                <h3 class="h3">Je suis Victor</h3>
+                <p>
+                    Je suis <span>Victor Kadiata</span> un passionné de IT et développeur Web doté d'une analyse
+                    approfondie des choses et d'un talent pour exécuter et concrétiser des idées en expérience
+                    numériques interactives.
+                </p>
+                <div class="hero_presentation__nav">
+                    <span><a href="/cv.html">CV</a></span>
+                    <span><a href="/projet.html">Projets</a></span>
+                    <span><a href="/contact.html">Contact</a></span>
+                </div>
             </div>
-        </div>
-    </main>
-
-    <footer>
-        <div>
-            <h3>Téléphone</h3>
-            <p><a href="tel:+243825229601">+243 82 522 9601</a></p>
-        </div>
-        <div>
-            <h3>Email</h3>
-            <p><a href="mailto:vickadiata@gmail.com">vickadiata@gmail.com</a></p>
-        </div>
-        <div>
-            <h3>Suivez-moi</h3>
-            <p>
-                <a href="https://www.linkedin.com/in/victor-kadiata-09838b58/" target="_blank"><iconify-icon
-                        icon="mdi:linkedin" width="24" height="24"></iconify-icon></a>
-                <a href="https://twitter.com/vickad25" target="_blank"><iconify-icon icon="devicon:twitter" width="24"
-                        height="24"></iconify-icon></a>
-                <a href="https://github.com/vick25" target="_blank"><iconify-icon icon="mdi:github" width="24"
-                        height="24"></iconify-icon></a>
-            </p>
-        </div>
-        <div>
-            <p class="text-small">&copy; 2024 - By Victor Kadiata</p>
-        </div>
-    </footer>
+        </main>
+        <footer class="footer">
+            <div>
+                <h3 class="h3">Téléphone</h3>
+                <p><a href="tel:+243825229601">+243 82 522 9601</a></p>
+            </div>
+            <div>
+                <h3 class="h3">Email</h3>
+                <p><a href="mailto:vickadiata@gmail.com">vickadiata@gmail.com</a></p>
+            </div>
+            <div>
+                <h3 class="h3">Suivez-moi</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/victor-kadiata-09838b58/" target="_blank"><iconify-icon
+                            icon="mdi:linkedin" width="24" height="24"></iconify-icon></a>
+                    <a href="https://twitter.com/vickad25" target="_blank"><iconify-icon icon="devicon:twitter"
+                            width="24" height="24"></iconify-icon></a>
+                    <a href="https://github.com/vick25" target="_blank"><iconify-icon icon="mdi:github" width="24"
+                            height="24"></iconify-icon></a>
+                </p>
+            </div>
+            <div>
+                <p class="footer-textSmall">&copy; 2024 - By Victor Kadiata</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
