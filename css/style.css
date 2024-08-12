@@ -156,14 +156,31 @@ menu {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 950px) {
+.experience__entete span {
+  font-weight: normal;
+}
+
+@media screen and (min-width: 640px) {
+  .experience__entete {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .header {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
   }
 
+  .footer__content {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 950px) {
   .nav__menu {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -184,7 +201,14 @@ menu {
     text-align: unset;
   }
 
-  .footer__content {
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  .main__cv {
+    grid-template-columns: unset;
+  }
+
+  .experience__entete {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
   }
 }
