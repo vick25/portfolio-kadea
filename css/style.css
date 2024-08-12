@@ -48,8 +48,8 @@ menu {
 
 .nav__menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
+  grid-template-columns: repeat(3, auto);
+  /* gap: 1.5em; */
 }
 
 .nav__menu-items:not(:first-child)::before {
@@ -63,15 +63,15 @@ menu {
 } */
 
 .nav__menu-links {
-  display: block;
+  /* display: block; */
 }
 
-.hero {
+.main {
   display: grid;
   gap: 2em;
 }
 
-.hero__image {
+.main__image {
   display: block;
   border-radius: 100%;
   width: 250px;
@@ -79,27 +79,27 @@ menu {
   margin-inline: auto;
 }
 
-.hero__presentation {
+.main__presentation {
   display: grid;
   justify-items: center;
 }
 
-.hero__presentation > p {
+.main__presentation > p {
   text-align: center;
 }
 
-.hero__presentation span {
+.main__presentation span {
   font-weight: bold;
 }
 
-.hero_presentation__nav {
+.main_presentation__nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.6em;
 }
 
-.hero__presentation h3,
-.hero__presentation h1 {
+.main__presentation h3,
+.main__presentation h1 {
   margin: 0;
 }
 
@@ -115,19 +115,25 @@ menu {
   border-radius: 100%;
 }
 
-.hero_presentation__nav span:nth-child(1) {
+.main_presentation__nav span:nth-child(1) {
   background: #eea302;
 }
 
-.hero_presentation__nav span:nth-child(2) {
+.main_presentation__nav span:nth-child(2) {
   background: #e13b25;
 }
 
-.hero_presentation__nav span:nth-child(3) {
+.main_presentation__nav span:nth-child(3) {
   background: #80d8da;
 }
 
 .footer {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 1em;
+  width: 100%;
+}
+
+.footer__content {
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -137,22 +143,48 @@ menu {
   margin-bottom: 1.5rem;
 }
 
-.footer::before {
-  content: "";
-  height: 2px;
-  border-top: 1px solid #d9d9d9;
-  width: 100%;
-}
-
-.footer > div > * {
+.footer__content > div > * {
   text-align: center;
   margin: 0;
 }
 
-.footer h3 {
+.footer__content h3 {
   margin-bottom: 5px;
 }
 
 .text-small {
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 950px) {
+  .header {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+  }
+
+  .main {
+    grid-template-columns: 500px 1fr;
+    gap: 0;
+    align-items: center;
+  }
+
+  .main__presentation {
+    justify-items: flex-start;
+  }
+
+  .main__presentation > p {
+    text-align: unset;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
 }
